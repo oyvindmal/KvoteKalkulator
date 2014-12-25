@@ -13,6 +13,7 @@ $(document).ready(function () {
         link.html(v.Name);
         link.click(function () {
             LoadPage(v.Template);
+            $(".navbar-toggle").trigger('click');
         })
         link.appendTo(elem);
         elem.appendTo(defaultNav);
